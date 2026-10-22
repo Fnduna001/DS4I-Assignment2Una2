@@ -184,7 +184,7 @@ $$\text{Balanced Accuracy} = \frac{\text{Sensitivity + Specificity}}{2}$$
 * Activation functions
 * Filter (square) size 
 * Number of filters 
-* Average validation performance metrics reported
+* **Average validation** performance metrics reported
 
 
 
@@ -199,7 +199,7 @@ $$\text{Balanced Accuracy} = \frac{\text{Sensitivity + Specificity}}{2}$$
 #| warning: false
 hidden_layer_tune <- data.frame(
   `Number of Hidden Layers` = c(1, 2),
-  `Validation Loss` = c(0.214, 0.105),
+  `Contrastive Loss` = c(0.214, 0.105),
   `Balanced Accuracy` = c(0.773, 0.966),
   check.names = FALSE
 )
@@ -228,7 +228,7 @@ act_fn_tune <- data.frame(
     "relu_tanh",
     "tanh_tanh"
   ),
-  `Validation Loss` = c(0.105, 0.103, 0.108, 0.113),
+  `Contrastive Loss` = c(0.105, 0.103, 0.108, 0.113),
   `Balanced Accuracy` = c(0.966, 0.971, 0.982, 0.980),
   check.names = FALSE
 )
@@ -267,7 +267,7 @@ act_fn_tune |>
 * Epochs: 6
 
 #### Outputs 
-* Test Balanced accuracy: 0.820
+* Test Balanced accuracy: 0.751
 * Test Loss: 0.104
 * Distance threshold: 0.247
 
