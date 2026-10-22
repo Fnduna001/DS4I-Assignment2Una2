@@ -1,0 +1,12 @@
+---
+title: "ending"
+format: beamer
+---
+
+# The End
+\begin{center}
+\includegraphics[width=0.5\textwidth]{smiling_NN.png}
+\end{center}
+
+\center
+\huge Thank You
